@@ -1,0 +1,147 @@
+.note-form{
+    position: relative;
+    border: 2px solid rgb(84, 84, 84);
+    box-shadow: 5px 5px 10px 0 rgb(0,0,0);
+    border-radius: 10px;
+    list-style-type: none;
+    min-width: 260px;
+    width: 60%;
+    padding: 15px;
+    margin: 0px auto 40px;
+    transition: all .4s ease;
+}
+
+
+
+.input-title{
+    width: 85%;
+    height: 40px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    background: none;
+    border: none;
+    transition: all .2s ease;
+}
+
+.input-title:focus{
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+}
+
+.note-form-hr{
+    width: 20%;
+    margin: 0 0 15px;
+}
+
+.input-content{
+    height: 40px;
+    width: 100%;
+    resize: none;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+
+}
+.input-content:focus{
+    border: none;
+    outline: none;
+}
+
+
+
+.importance-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.importance-container label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    margin: 0;
+    width: 100%;
+    max-width: 200px;
+    border: 1px solid black;
+    cursor: pointer;
+    color: white;
+    transition: all .2s ease;
+}
+
+.importance-container button{
+    padding: 10px 15px;
+    width: 100%;
+    max-width: 200px;
+    background-color: none;
+    background-image: linear-gradient(90deg, #33744a,#60d889);
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: all .2s ease;
+}
+
+.importance-container button:hover{
+    background-size: 100% 100%;
+    color: white;
+}
+
+#importance-checkbox{
+    display: none;
+}
+
+.x-mark{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 2rem;
+}
+.x-mark:hover{
+    opacity: .8;
+}
+
+.circle-exclamation{
+    font-size: 1.8rem;
+    color: white;
+}
+#importance-checkbox:hover ~ label{
+    opacity: .9;
+}
+
+.span-important{
+    background-color: #CE3A54;
+}
+
+.span-not-important{
+    background-color: #979797;
+}
+
+#importance-checkbox:checked ~ label .circle-exclamation{
+    color: white;
+}
+
+.create-warning{
+    position: absolute;
+    width: 210px;
+    text-align: center;
+    bottom: 30px;
+    right: 12%;
+    color: red;
+    font-weight: bold;
+}
+
+@media(min-width: 769px){
+    .importance-container{
+        flex-direction: row;
+    }
+    
+    .create-warning{
+    right: 0px;
+}
+}

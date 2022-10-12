@@ -1,0 +1,36 @@
+.notes-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.empty-notes-container{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.empty-notes-title{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.empty-notes-text{
+    font-style: italic;
+    font-size: 1.6rem;
+}
+
+.empty-notes-container .note-creator-span{
+    color: rgb(34, 99, 211);
+    cursor: pointer;
+}
+
+.empty-notes-container .note-creator-span:hover{
+    opacity: .9;
+    text-decoration: underline;
+}

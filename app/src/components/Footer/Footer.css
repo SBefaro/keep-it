@@ -1,0 +1,43 @@
+.footer-container{
+    background-color:#333;
+    padding:2rem 0;
+    margin-top: 60px;
+}
+.footer__text{
+    font-size:1.3rem;
+    color:gray;
+    text-align: center;
+}
+
+.footer__hr{
+    margin:1rem auto;
+    border:0;
+    width:50%;
+    border-top:3px solid rgba(255,255,255,.5)
+}
+.social-links{
+    display:flex;
+    justify-content:center
+}
+.social-links a{
+    font-size:3rem;
+    display:flex;
+    justify-content:center;
+    color:#fff;
+    width:5rem;
+    margin:1.2rem 1.6rem;
+    transition:all ease .2s
+}
+
+.social-links a:hover{
+    transform:scale(1.1) translateY(-2px)
+}
+
+.social-links a:hover .linkedin{
+    color:#00a0dc
+}
+.social-links a:hover .github{
+    color:#6e5494
+}
+
+

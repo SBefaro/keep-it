@@ -1,0 +1,101 @@
+.note{
+    position: relative;
+    padding: 20px;
+    padding-top: 30px ;
+    padding-bottom: 50px;
+    border: 3px solid black;
+    border-radius: 10px;
+    list-style-type: none;
+    width: 500px;
+    min-width: 250px;
+    min-height: 240px;
+    transition: all .3s ease;
+    box-shadow: 4px 4px 8px 0 #000;
+}
+
+.note-title{
+    width: 85%;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.note-content{
+    font-size: 1.1rem;
+}
+
+.datetime{
+    position: absolute;
+    font-size: .8rem;
+    bottom: 20px;
+    left: 20px;
+    max-width: 150px;
+}
+
+.important-text {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    display: inline;
+    cursor: help;
+}
+
+.popup{
+    position: absolute;
+    top: -24px;
+    right: -40px;
+    background-color: none;
+    transition: opacity .4s ease;
+    cursor: default;
+    opacity: 0;
+  }
+
+.important-text:hover ~ .popup {
+    opacity: 1;
+    color: red;
+}
+
+.circle__exclamation{
+    font-size: 1.8rem;
+    color: #CE3A54;
+}
+
+.pen{
+    position: absolute;
+    bottom: 20px;
+    right: 45px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.trash{
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.pen:hover,
+.trash:hover{
+    opacity: .8;
+}
+
+.editing{
+    opacity: 0;
+}
+.note .delete-warning{
+    color: red;
+    position: absolute;
+    font-size: .89rem;
+    font-weight: bold;
+    bottom: -18px;
+    right: 10px;
+}
+
+@media(min-width: 769px){
+    .note .delete-warning{
+        bottom: 25px;
+    }
+}

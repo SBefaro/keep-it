@@ -1,0 +1,9 @@
+PUT http://localhost:3001/api/notes/633b983d8cf76fd858bc6474
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMjNlOGRhZTMwZjRhZTFhOGJmZjhkNiIsInVzZXJuYW1lIjoiYWRtaW4iLCJpYXQiOjE2NjMzMDIyNjcsImV4cCI6MTY2NTg5NDI2N30.cYlz0BqXFSVYhdxWOK3kEWM8_78elrSZvaBm890U_oM
+
+{   
+    "title": "Modified Testing Put v20",
+    "content": "Modified Note with PUT method v2",
+    "important": true
+}
